@@ -1,0 +1,26 @@
+mixin blog()
+  .blog
+    .container.blog__container
+      h2 Blog
+      a.blog__link(href="#", aria-label="Переход на страницу новостей") Read All
+      ul.blog__list
+        .blog__items-wrapper
+          li.blog__item
+            +img("blog", "blog-first", "png", 285, 300, "Пример")
+            .blog__text-wrapper
+              p September 30, 2019
+              h3 How to care for your jewellery
+              a.blog__link.blog__link--item(href="#", aria-label="Переход на страницу новостей") Read Article
+          li.blog__item
+            .blog__text-wrapper
+              p September 23, 2019
+              h3 Power of crystals
+              a.blog__link.blog__link--item(href="#", aria-label="Переход на страницу новостей") Read Article
+            +img("blog", "blog-second", "png", 285, 300, "Пример")
+        li.blog__item.blog__item--big
+          .blog__picture-wrapper
+            +img("blog", "blog-third", "png", 570, 630, "Пример")
+          .blog__text-wrapper.blog__text-wrapper--big
+            p September 16, 2019
+            h3 AW 19 trends
+            a.blog__link.blog__link--item(href="#", aria-label="Переход на страницу новостей") Read Article

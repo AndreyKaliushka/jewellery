@@ -1,0 +1,25 @@
+mixin gallery()
+  .gallery
+    .container.gallery__container
+      h2 @Chjewellery
+      a.gallery__link(href="#", aria-label="Переход на страницу новостей") Read All
+      .gallery__wrapper
+        .gallery__pictures-wrapper
+          .gallery__picture
+            +img("gallery", "gallery-first", "png", 230, 230, "Пример")
+          .gallery__picture
+            +img("gallery", "gallery-second", "png", 230, 230, "Пример")
+        .gallery__pictures-wrapper.gallery__picture-wrapper--big
+          .gallery__picture.gallery__picture--big
+            +img("gallery", "gallery-third", "png", 399, 412, "Пример")
+        .gallery__pictures-wrapper
+          .gallery__picture
+            +img("gallery", "gallery-fourth", "png", 230, 230, "Пример")
+          .gallery__picture
+            +img("gallery", "gallery-fifth", "png", 230, 230, "Пример")
+        .gallery__pictures-wrapper
+          .gallery__picture
+            +img("gallery", "gallery-sixth", "png", 230, 230, "Пример")
+          .gallery__picture
+            +img("gallery", "gallery-seventh", "png", 230, 230, "Пример")
+

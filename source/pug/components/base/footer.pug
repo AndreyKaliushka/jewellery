@@ -1,3 +1,50 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__subscription.subscription
+        .subscription__text
+          h2 The good stuff in your inbox
+          p News and updates from CH. No spam, we promise.
+        div.subscription__form-wrapper(data-form-validate, data-callback="base")
+          form(method="post")
+            +custom-input({
+            inputType: "email",
+            inputLabel: "Your E-mail",
+            inputName: "user-email",
+            inputPlaceholder: "Your E-mail",
+            })(data-validate-type="email", data-message-base="Поле обязательно к заполнению", data-required)
+            button.btn.btn--form(type="submit") Sign Up
+              +icon("right-arrow", 29, 9)
+      .footer__information-wrapper
+        ul.footer__list
+          li.footer__list-item
+            a(href="#") Ordering & Payment
+          li.footer__list-item
+            a(href="#") Terms & Conditions
+          li.footer__list-item
+            a(href="#") Returns & Exchanges
+          li.footer__list-item
+            a(href="#") Delivery
+        ul.footer__list
+          li.footer__list-item
+            a(href="#") About CH
+          li.footer__list-item
+            a(href="#") Stores & Hours
+          li.footer__list-item
+            a(href="#") Jobs
+          li.footer__list-item
+            a(href="#") Contact Us
+        ul.footer__list
+          li.footer__list-item
+            a(href="#") Facebook
+              +icon("facebook", 15, 15)
+          li.footer__list-item
+            a(href="#") Instagram
+              +icon("instagram", 15, 15)
+          li.footer__list-item
+            a(href="#") Pinterest
+              +icon("pinterest", 15, 15)
+          li.footer__list-item
+            a(href="#") Twitter
+              +icon("twitter", 15, 15)
+

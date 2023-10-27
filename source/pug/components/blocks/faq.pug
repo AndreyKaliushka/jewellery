@@ -1,0 +1,31 @@
+-
+  const faqArray = [
+    {
+      question: 'What materials are the jewellery made of?',
+      answer: 'Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.',
+    },
+    {
+      question: 'Which countries do you deliver to?',
+      answer: 'To every country in the world',
+    },
+    {
+      question: 'What are the payment methods?',
+      answer: 'We accespt VISA, MASTERCARD, WORLD, PAYPAL and cash',
+    },
+    {
+      question: 'Can I return the jewellery if it didn’t fit me?',
+      answer: 'No way!',
+    },
+  ]
+
+mixin faq()
+  .faq
+    .container.faq__container
+      h2 Frequently asked questions
+      .accordion.faq__accordion(data-accordion="parent", data-single)
+          each item in faqArray
+            .accordion__element.faq__accordion-element(data-accordion="element")
+              button.accordion__button.btn.faq__accordion-button(type="button", data-accordion="button")= item.question
+              .accordion__content(data-accordion="content")
+                .accordion__wrapper.faq__accordion-wrapper
+                  p= item.answer

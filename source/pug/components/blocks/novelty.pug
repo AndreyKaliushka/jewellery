@@ -1,0 +1,41 @@
+-
+  const noveltyArray = [
+    {
+      photo: "purple-gemstone-necklace",
+      label: "Necklace with amethyst",
+      price: "$ 145"
+    },
+    {
+      photo: "layered-choker-necklace",
+      label: "Layered сhoker",
+      price: "$ 115"
+    },
+    {
+      photo: "dainty-gold-necklace",
+      label: "Gold chain",
+      price: "$ 245"
+    },
+  ];
+
+mixin novelty()
+  .novelty
+    .container
+      .novelty__wrapper
+        .novelty__heading-wrapper
+          h2 New In
+        .novelty__button-wrapper
+          .swiper-button-prev.novelty__button.novelty__button--prev
+            +icon("left-arrow", 29, 9)
+          .swiper-button-next.novelty__button.novelty__button--next
+            +icon("right-arrow", 29, 9)
+        a.novelty__link(href="#", aria-label="Переход на страницу каталога") Shop Now
+        .swiper.swiper__novelty
+          .swiper-wrapper.novelty__swiper-wrapper
+            each product in noveltyArray
+              .swiper-slide.novelty__swiper-slide
+                .novelty__slide-picture
+                  +img("novelty", product.photo, "png", 270, 284, "Пример")
+                .novelty__slide-text
+                  h3= product.label
+                  p= product.price
+          .swiper-pagination.novelty__swiper-pagination

@@ -1,5 +1,103 @@
 .footer {
-  padding: 40px 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: $color-default-black;
 
-  background-color: $color-neon-blue;
+  .container {
+    padding: 100px 98px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+.footer__subscription {
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 36.60322108345534vw;
+}
+
+.subscription__text h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: $ff-cormorant;
+  font-size: 2.489019033674963vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 44.2px */
+  letter-spacing: 1.02px;
+}
+
+.subscription__text p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #9B9997;
+  font-size: 1.171303074670571vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.522693997071742vw; /* 20.8px */
+}
+
+.subscription__form-wrapper {
+  border-bottom: 1px solid $color-default-white;
+}
+
+.subscription__form-wrapper form {
+  display: flex;
+
+  .custom-input {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .custom-input__label {
+    display: none;
+  }
+
+  .custom-input label input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: $color-default-black;
+    width: 29.06295754026354vw;
+
+    &::placeholder {
+      color: #9B9997;
+      font-family: $ff-poppins;
+      font-size: 1.02489019033675vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .btn--form {
+    background-color: $color-default-black;
+    color: $color-default-white;
+    text-align: center;
+    font-family: $ff-poppins;
+    font-size: 1.171303074670571vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 20.8px */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+
+    svg {
+      margin-left: 12px;
+    }
+  }
+}
+
+.footer__information-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }

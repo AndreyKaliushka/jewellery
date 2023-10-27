@@ -2,23 +2,18 @@
   &__list {
     display: flex;
     margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
-
+    padding: 0 98px;
+    padding-top: 24px;
     list-style: none;
+    justify-content: center;
   }
 
   &__item {
-    margin-right: 20px;
+    margin-right: 34px;
   }
 
   &__link {
-    color: $color-default-white;
-
-    &.is-active {
-      opacity: 0.6;
-    }
+    color: #1D1613;
   }
 
   &__toggle {

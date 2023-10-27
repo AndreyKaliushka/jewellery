@@ -3,7 +3,10 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
+import {setNoveltySwiper} from './utils/page-swiper.js';
+import {initAccordions} from './utils/init-accordion';
 
+setNoveltySwiper();
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initAccordions();
   });
 });
 
